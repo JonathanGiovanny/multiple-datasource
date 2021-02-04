@@ -1,0 +1,9 @@
+datasource:
+    primary:
+      jdbcUrl: jdbc:oracle:thin:@localhost:1521:xe
+      username: user_1
+      password: pass_1
+    secondary:
+      jdbcUrl: jdbc:oracle:thin:@localhost:1523:xe
+      username: user_2
+      password: pass_2

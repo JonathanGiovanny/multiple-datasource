@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+    oracle_db_1:
+        image:  quay.io/maksymbilenko/oracle-12c:latest
+        container_name: oracle_db_1
+        ports:
+          - 1521:1521
+        volumes:
+          - ./init_1.sql:/docker-entrypoint-initdb.d/init.sql
+    
+    oracle_db_2:
+        image:  quay.io/maksymbilenko/oracle-12c:latest
+        container_name: oracle_db_2
+        ports:
+          - 1523:1521
+        volumes:
+          - ./init_2.sql:/docker-entrypoint-initdb.d/init.sql

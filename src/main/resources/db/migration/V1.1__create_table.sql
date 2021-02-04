@@ -1,0 +1,7 @@
+CREATE TABLE user_info(
+	id			NUMBER			NOT NULL	PRIMARY KEY,
+	name		VARCHAR2(255)	NOT NULL	,
+	description VARCHAR2(255)				
+);
+
+CREATE SEQUENCE seq_user START WITH 1;
